@@ -72,6 +72,7 @@ const prerequisitos = {
   // Año 1 - Semestre 2
   'deportes2': [],
   'fisica1': ['matematica1'],
+  'ingenieria_sociedad': [],
   'matematica2': ['matematica1'],
   'programacion': ['computacion'],
   
