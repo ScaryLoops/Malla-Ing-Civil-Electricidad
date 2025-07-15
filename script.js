@@ -1,140 +1,154 @@
 // Créditos oficiales de cada ramo
 const creditos = {
-  'fundamentos1': 3,
-  'quimica': 3,
-  'biologia': 6,
-  'mate': 2,
-  'fisica': 2,
-  'educacion1': 4,
-  'cs_sociales1': 6,
-  'cfg1': 2,
-  'ingles1': 3,
-  'saludcom1': 4,
-  'bioquimica': 3,
-  'biodesarrollo': 4,
-  'fisiologia': 4,
-  'anatomia': 5,
-  'histologia': 3,
-  'integracion1': 2,
-  'cfg2': 2,
-  'ingles2': 3,
-  'fundamentos2': 4,
-  'obstetricia1': 4,
-  'neonatologia1': 4,
-  'fisiologia_sis': 5,
-  'inmunologia': 3,
-  'agentes': 3,
-  'cs_sociales2': 5,
-  'ingles3': 3,
-  'neonatologia2': 3,
-  'obstetricia2': 3,
-  'gineco1': 5,
-  'fisiopato': 5,
-  'infectologia': 3,
-  'farmacologia': 4,
-  'integracion2': 3,
-  'investigacion1': 3,
-  'clinica_neonatal1': 5,
-  'clinica_partos1': 5,
-  'clinica_ap1': 5,
-  'clinica_puerperio': 5,
-  'clinica_saludcom': 4,
-  'modulo1': 4,
-  'neonatologia3': 4,
-  'saludcom2': 6,
-  'obstetricia_pat': 4,
-  'gestion1': 4,
-  'educacion2': 3,
-  'investigacion2': 5,
-  'cs_sociales3': 4,
-  'cfg3': 2,
-  'enfermeria_mq': 6,
-  'reproduccion': 2,
-  'gineco_pat': 5,
-  'gestion2': 5,
-  'investigacion3': 6,
-  'cs_sociales4': 4,
-  'clinica_neonatal2': 5,
-  'clinica_partos2': 4,
-  'clinica_ap2': 5,
-  'alto_riesgo': 4,
-  'clinica_mq': 4,
-  'modulo2': 5,
-  'seminario1': 2,
-  'internado_neonatologia': 10,
-  'internado_obstetricia': 10,
-  'internado_ap': 10,
-  'internado_gineco': 10,
-  'internado_electivo': 15,
-  'seminario2': 3,
-  'ingles4': 3,
-  'internado_electivo1': 15
+  'computacion': 3,
+  'comunicacion': 4,
+  'deportes1': 2,
+  'introduccion': 4,
+  'matematica1': 14,
+  'deportes2': 2,
+  'fisica1': 9,
+  'ingenieria_sociedad': 4,
+  'matematica2': 12,
+  'programacion': 6,
+  'fisica2': 9,
+  'matematica3': 9,
+  'quimica': 6,
+  'redes1': 4,
+  'tecnologia': 3,
+  'estadistica': 6,
+  'fisica_electronica': 3,
+  'fisica3': 6,
+  'matematica4': 6,
+  'medidas': 3,
+  'redes2': 5,
+  'calculo': 6,
+  'electromagnetica': 6,
+  'ingles1': 4,
+  'maquinas': 6,
+  'senales': 6,
+  'control': 5,
+  'electronica1': 4,
+  'ingles2': 4,
+  'lab_maquinas': 4,
+  'programacion_avanzada': 5,
+  'sistemas_potencia1': 5,
+  'sistemas_digitales': 6,
+  'economia': 4,
+  'electronica_potencia1': 6,
+  'electronica2': 4,
+  'emprendedores': 2,
+  'lab_electronica': 4,
+  'microprocesadores': 4,
+  'sistemas_potencia2': 6,
+  'comportamiento': 3,
+  'comunicaciones': 6,
+  'control_digital': 6,
+  'electronica_potencia2': 6,
+  'investigacion': 4,
+  'lab_micro': 5,
+  'accionamientos': 7,
+  'control_moderno': 6,
+  'electivo1': 5,
+  'ingenieria_economica': 4,
+  'ingles3': 4,
+  'control_riesgo': 2,
+  'distribucion': 6,
+  'electivo2': 5,
+  'electivo3': 5,
+  'ingles4': 4,
+  'instrumentacion': 6,
+  'proyectos': 4,
+  'automatas': 6,
+  'direccion': 4,
+  'electivo_titulacion': 5,
+  'electivo4': 3,
+  'gestion': 4,
+  'plantas': 6,
+  'trabajo_titulo': 30
 };
 
 // Prerrequisitos de cada ramo (ramos que deben estar aprobados para desbloquear este)
 const prerequisitos = {
-  'integracion1': ['fundamentos1'],
-  'bioquimica': ['quimica', 'biologia'],
-  'anatomia': ['biologia'],
-  'fisiologia': ['biologia', 'fisica'],
-  'biodesarrollo': ['biologia'],
-  'histologia': ['biologia'],
-  'investigacion1': ['mate', 'fisica'],
-  'educacion2': ['educacion1'],
-  'inmunologia': ['fisiologia'],
-  'cs_sociales2': ['cs_sociales1'],
+  // Año 1 - Semestre 2
+  'deportes2': [],
+  'fisica1': ['matematica1'],
+  'matematica2': ['matematica1'],
+  'programacion': ['computacion'],
+  
+  // Año 2 - Semestre 1
+  'fisica2': ['fisica1', 'matematica2'],
+  'matematica3': ['matematica2'],
+  'quimica': [],
+  'redes1': ['matematica1'],
+  'tecnologia': [],
+  
+  // Año 2 - Semestre 2
+  'estadistica': ['matematica2'],
+  'fisica_electronica': ['fisica2'],
+  'fisica3': ['fisica2', 'matematica2'],
+  'matematica4': ['matematica3'],
+  'medidas': ['redes1'],
+  'redes2': ['redes1', 'matematica2'],
+  
+  // Año 3 - Semestre 1
+  'calculo': ['matematica4'],
+  'electromagnetica': ['fisica2', 'matematica3'],
+  'ingles1': [],
+  'maquinas': ['redes2', 'fisica2'],
+  'senales': ['redes2'],
+  
+  // Año 3 - Semestre 2
+  'control': ['senales'],
+  'electronica1': ['redes1'],
   'ingles2': ['ingles1'],
-  'saludcom1': [],
-  'fundamentos2': ['fisiologia', 'anatomia', 'histologia', 'integracion1'],
-  'obstetricia1': ['fisiologia', 'anatomia', 'histologia', 'biodesarrollo', 'integracion1'],
-  'neonatologia1': ['fisiologia', 'anatomia', 'histologia', 'biodesarrollo', 'integracion1'],
-  'fisiologia_sis': ['fisiologia'],
-  'agentes': ['fisiologia', 'anatomia', 'histologia'],
-  'cs_sociales3': ['cs_sociales2'],
-  'ingles3': ['ingles2'],
-  'neonatologia2': ['neonatologia1', 'fisiologia_sis', 'agentes'],
-  'obstetricia2': ['obstetricia1', 'fisiologia_sis'],
-  'gineco1': ['histologia', 'fisiologia_sis'],
-  'fisiopato': ['fisiologia_sis'],
-  'infectologia': ['agentes'],
-  'farmacologia': ['fisiologia_sis', 'bioquimica'],
-  'integracion2': ['fisiologia_sis','fundamentos2'],
-  'clinica_neonatal1': ['neonatologia2', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
-  'clinica_partos1': ['obstetricia2', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
-  'clinica_ap1': ['obstetricia2', 'gineco1', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
-  'clinica_puerperio': ['obstetricia2', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
-  'clinica_saludcom': ['integracion2'],
-  'modulo1': [],
-  'neonatologia3': ['farmacologia', 'fisiopato', 'obstetricia2'],
-  'saludcom2': ['saludcom1'],
-  'obstetricia_pat': ['obstetricia2', 'farmacologia', 'fisiopato'],
-  'gestion1': ['investigacion1'],
-  'investigacion2': ['investigacion1'],
-  'enfermeria_mq': ['neonatologia3', 'obstetricia_pat'],
-  'reproduccion': ['fisiologia_sis'],
-  'gineco_pat': ['clinica_ap1'],
-  'gestion2': ['gestion1'],
-  'investigacion3': ['investigacion2'],
-  'cs_sociales4': ['cs_sociales3'],
-  'clinica_neonatal2': ['neonatologia3', 'enfermeria_mq'],
-  'clinica_partos2': ['obstetricia_pat', 'enfermeria_mq'],
-  'clinica_ap2': ['obstetricia_pat', 'gineco_pat', 'saludcom2'],
-  'alto_riesgo': ['obstetricia_pat', 'enfermeria_mq'],
-  'clinica_mq': ['gineco_pat', 'enfermeria_mq'],
-  'modulo2': ['modulo1'],
-  'seminario1': ['investigacion3'],
-  'internado_neonatologia': ['clinica_neonatal2'],
-  'internado_obstetricia': ['clinica_partos2', 'alto_riesgo'],
-  'internado_ap': ['clinica_ap2'],
-  'internado_gineco': ['clinica_mq'],
-  'internado_neonatologia1': ['clinica_neonatal2'],
-  'internado_obstetricia1': ['clinica_partos2', 'alto_riesgo'],
-  'internado_ap1': ['clinica_ap2'],
-  'internado_gineco1': ['clinica_mq'],
-  'internado_electivo': [],
-  'internado_electivo1': [],
-  'seminario2': ['seminario1'],
-  'ingles4': ['ingles3']
+  'lab_maquinas': ['medidas', 'maquinas'],
+  'programacion_avanzada': ['programacion'],
+  'sistemas_potencia1': ['electromagnetica', 'maquinas'],
+  'sistemas_digitales': ['medidas', 'matematica1'],
+  
+  // Año 4 - Semestre 1
+  'economia': [],
+  'electronica_potencia1': ['electronica1'],
+  'electronica2': ['electronica1'],
+  'emprendedores': [],
+  'lab_electronica': ['electronica1'],
+  'microprocesadores': ['sistemas_digitales'],
+  'sistemas_potencia2': ['sistemas_potencia1'],
+  
+  // Año 4 - Semestre 2
+  'comportamiento': [],
+  'comunicaciones': ['electronica2', 'senales', 'electromagnetica'],
+  'control_digital': ['control', 'microprocesadores'],
+  'electronica_potencia2': ['maquinas', 'electronica_potencia1'],
+  'investigacion': ['calculo'],
+  'lab_micro': ['microprocesadores', 'lab_electronica'],
+  
+  // Año 5 - Semestre 1
+  'accionamientos': ['electronica_potencia1', 'lab_maquinas', 'control'],
+  'control_moderno': [],
+  'electivo1': ['economia', 'emprendedores', 'microprocesadores', 'electronica2', 'electronica_potencia1', 'sistemas_potencia2', 'lab_electronica'],
+  'ingenieria_economica': ['economia'],
+  'ingles3': [],
+  
+  // Año 5 - Semestre 2
+  'control_riesgo': [],
+  'distribucion': ['sistemas_potencia2'],
+  'electivo2': ['economia', 'emprendedores', 'microprocesadores', 'electronica2', 'electronica_potencia1', 'sistemas_potencia2', 'lab_electronica'],
+  'electivo3': [],
+  'ingles4': ['ingles3'],
+  'instrumentacion': ['microprocesadores', 'electronica2'],
+  'proyectos': ['ingenieria_economica'],
+  
+  // Año 6 - Semestre 1
+  'automatas': ['lab_micro', 'accionamientos'],
+  'direccion': ['proyectos'],
+  'electivo_titulacion': [],
+  'electivo4': ['electivo3'],
+  'gestion': [],
+  'plantas': ['electronica_potencia1'],
+  
+  // Año 6 - Semestre 2
+  'trabajo_titulo': ['electivo1', 'control_moderno', 'ingles3']
 };
 
 // Funciones para guardar y cargar progreso en localStorage
@@ -153,7 +167,7 @@ function calcularCreditosAprobados() {
   return aprobados.reduce((sum, ramo) => sum + (creditos[ramo] || 0), 0);
 }
 
-// Actualiza qué ramos están desbloqueados o bloqueados según prerrequisitos y créditos especiales
+// Actualiza qué ramos están desbloqueados o bloqueados según prerrequisitos
 function actualizarDesbloqueos() {
   const aprobados = obtenerAprobados();
   const totalCreditos = calcularCreditosAprobados();
@@ -165,15 +179,9 @@ function actualizarDesbloqueos() {
     // Verificar si se cumplen prerrequisitos normales
     let puedeDesbloquear = reqs.every(r => aprobados.includes(r));
 
-    // Reglas especiales con créditos para ciertos módulos
-    if (destino === 'modulo1') {
-      puedeDesbloquear = totalCreditos >= 90;
-    }
-    if (destino === 'modulo2') {
-      puedeDesbloquear = aprobados.includes('modulo1') && totalCreditos >= 170;
-    }
-    if (destino === 'internado_electivo' || destino === 'internado_electivo1') {
-      puedeDesbloquear = totalCreditos >= 240;
+    // Reglas especiales para electivos
+    if (destino === 'electivo1' || destino === 'electivo2') {
+      puedeDesbloquear = reqs.some(r => aprobados.includes(r)); // Solo requiere uno de los requisitos
     }
 
     if (!elem.classList.contains('aprobado')) {
