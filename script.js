@@ -1,174 +1,224 @@
-function desbloquearRamos() {
-  const aprobados = JSON.parse(localStorage.getItem('aprobados') || '[]');
-  document.getElementById('computacion').classList.remove('bloqueado');
-  document.getElementById('comunicacion_efectiva').classList.remove('bloqueado');
-  document.getElementById('deportes_i').classList.remove('bloqueado');
-  document.getElementById('introduccion_a_la_ingenieria').classList.remove('bloqueado');
-  document.getElementById('matematica_i').classList.remove('bloqueado');
-  document.getElementById('deportes_ii').classList.remove('bloqueado');
-  if (aprobados.includes('matematica_i')) {
-    document.getElementById('fisica_i').classList.remove('bloqueado');
-  }
-  document.getElementById('ingenieria_y_sociedad').classList.remove('bloqueado');
-  if (aprobados.includes('matematica_i')) {
-    document.getElementById('matematica_ii').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('computacion')) {
-    document.getElementById('programacion_de_computadores').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('fisica_i') && aprobados.includes('matematica_ii')) {
-    document.getElementById('fisica_ii').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('matematica_ii')) {
-    document.getElementById('matematica_iii').classList.remove('bloqueado');
-  }
-  document.getElementById('quimica_general').classList.remove('bloqueado');
-  if (aprobados.includes('matematica_i')) {
-    document.getElementById('redes_electricas_i').classList.remove('bloqueado');
-  }
-  document.getElementById('tecnologia_electrica').classList.remove('bloqueado');
-  if (aprobados.includes('matematica_ii')) {
-    document.getElementById('estadistica').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('fisica_ii')) {
-    document.getElementById('fisica_electronica').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('fisica_ii') && aprobados.includes('matematica_ii')) {
-    document.getElementById('fisica_iii').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('matematica_iii')) {
-    document.getElementById('matematica_iv').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('redes_electricas_i')) {
-    document.getElementById('medidas_electricas').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('redes_electricas_i') && aprobados.includes('matematica_ii')) {
-    document.getElementById('redes_electricas_ii').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('matematica_iv')) {
-    document.getElementById('calculo_numerico').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('fisica_ii') && aprobados.includes('matematica_iii')) {
-    document.getElementById('ingenieria_electromagnetica').classList.remove('bloqueado');
-  }
-  document.getElementById('ingles_i_tecnico').classList.remove('bloqueado');
-  if (aprobados.includes('redes_electricas_ii') && aprobados.includes('fisica_ii')) {
-    document.getElementById('maquinas_electricas').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('redes_electricas_ii')) {
-    document.getElementById('senales_y_sistemas').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('senales_y_sistemas')) {
-    document.getElementById('control_automatico').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('redes_electricas_i')) {
-    document.getElementById('electronica_i').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('ingles_i_tecnico')) {
-    document.getElementById('ingles_ii').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('medidas_electricas') && aprobados.includes('maquinas_electricas')) {
-    document.getElementById('laboratorio_de_maquinas_electricas').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('programacion_de_computadores')) {
-    document.getElementById('programacion_avanzada').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('ingenieria_electromagnetica') && aprobados.includes('maquinas_electricas')) {
-    document.getElementById('sistemas_de_potencia_i').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('medidas_electricas') && aprobados.includes('matematica_i')) {
-    document.getElementById('sistemas_digitales').classList.remove('bloqueado');
-  }
-  document.getElementById('economia_y_administracion_de_empresas').classList.remove('bloqueado');
-  if (aprobados.includes('electronica_i')) {
-    document.getElementById('electronica_de_potencia_i').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('electronica_i')) {
-    document.getElementById('electronica_ii').classList.remove('bloqueado');
-  }
-  document.getElementById('formacion_de_emprendedores').classList.remove('bloqueado');
-  if (aprobados.includes('electronica_i')) {
-    document.getElementById('laboratorio_electronica').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('sistemas_digitales')) {
-    document.getElementById('microprocesadores').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('sistemas_de_potencia_i')) {
-    document.getElementById('sistemas_de_potencia_ii').classList.remove('bloqueado');
-  }
-  document.getElementById('comportamiento_organizacional').classList.remove('bloqueado');
-  if (aprobados.includes('electronica_ii') && aprobados.includes('senales_y_sistemas') && aprobados.includes('ingenieria_electromagnetica')) {
-    document.getElementById('comunicaciones_electronicas').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('control_automatico') && aprobados.includes('microprocesadores')) {
-    document.getElementById('control_digital').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('maquinas_electricas') && aprobados.includes('electronica_de_potencia_i')) {
-    document.getElementById('electronica_de_potencia_ii').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('calculo_numerico')) {
-    document.getElementById('investigacion_operativa').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('microprocesadores') && aprobados.includes('laboratorio_electronica')) {
-    document.getElementById('laboratorio_de_microcomputadores').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('electronica_de_potencia_i') && aprobados.includes('laboratorio_de_maquinas_electricas') && aprobados.includes('control_automatico')) {
-    document.getElementById('accionamientos_electricos').classList.remove('bloqueado');
-  }
-  document.getElementById('control_moderno').classList.remove('bloqueado');
-  if (aprobados.includes('economia_y_administracion_de_empresas') && aprobados.includes('formacion_de_emprendedores') && aprobados.includes('microprocesadores') && aprobados.includes('electronica_ii') && aprobados.includes('electronica_de_potencia_i') && aprobados.includes('sistemas_de_potencia_ii') && aprobados.includes('laboratorio_electronica')) {
-    document.getElementById('electivo_i').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('economia_y_administracion_de_empresas')) {
-    document.getElementById('ingenieria_economica').classList.remove('bloqueado');
-  }
-  document.getElementById('ingles_iii').classList.remove('bloqueado');
-  document.getElementById('control_de_riesgo_operacional').classList.remove('bloqueado');
-  if (aprobados.includes('sistemas_de_potencia_ii')) {
-    document.getElementById('distribucion_y_protecciones').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('electivo_i')) {
-    document.getElementById('electivo_ii').classList.remove('bloqueado');
-  }
-  document.getElementById('electivo_iii').classList.remove('bloqueado');
-  if (aprobados.includes('ingles_iii')) {
-    document.getElementById('ingles_iv').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('microprocesadores') && aprobados.includes('electronica_ii')) {
-    document.getElementById('instrumentacion_industrial').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('ingenieria_economica')) {
-    document.getElementById('preparacion_de_proyectos').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('laboratorio_de_microcomputadores') && aprobados.includes('accionamientos_electricos')) {
-    document.getElementById('automatas_programables').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('preparacion_de_proyectos')) {
-    document.getElementById('direccion_de_empresas').classList.remove('bloqueado');
-  }
-  document.getElementById('electivo_de_titulacion').classList.remove('bloqueado');
-  if (aprobados.includes('electivo_iii')) {
-    document.getElementById('electivo_iv').classList.remove('bloqueado');
-  }
-  document.getElementById('gestion_ambiental').classList.remove('bloqueado');
-  if (aprobados.includes('electronica_de_potencia_i')) {
-    document.getElementById('plantas_de_energia').classList.remove('bloqueado');
-  }
-  if (aprobados.includes('electivo_i') && aprobados.includes('control_moderno') && aprobados.includes('ingles_iii')) {
-    document.getElementById('trabajo_de_titulo').classList.remove('bloqueado');
+// Créditos oficiales de cada ramo
+const creditos = {
+  'fundamentos1': 3,
+  'quimica': 3,
+  'biologia': 6,
+  'mate': 2,
+  'fisica': 2,
+  'educacion1': 4,
+  'cs_sociales1': 6,
+  'cfg1': 2,
+  'ingles1': 3,
+  'saludcom1': 4,
+  'bioquimica': 3,
+  'biodesarrollo': 4,
+  'fisiologia': 4,
+  'anatomia': 5,
+  'histologia': 3,
+  'integracion1': 2,
+  'cfg2': 2,
+  'ingles2': 3,
+  'fundamentos2': 4,
+  'obstetricia1': 4,
+  'neonatologia1': 4,
+  'fisiologia_sis': 5,
+  'inmunologia': 3,
+  'agentes': 3,
+  'cs_sociales2': 5,
+  'ingles3': 3,
+  'neonatologia2': 3,
+  'obstetricia2': 3,
+  'gineco1': 5,
+  'fisiopato': 5,
+  'infectologia': 3,
+  'farmacologia': 4,
+  'integracion2': 3,
+  'investigacion1': 3,
+  'clinica_neonatal1': 5,
+  'clinica_partos1': 5,
+  'clinica_ap1': 5,
+  'clinica_puerperio': 5,
+  'clinica_saludcom': 4,
+  'modulo1': 4,
+  'neonatologia3': 4,
+  'saludcom2': 6,
+  'obstetricia_pat': 4,
+  'gestion1': 4,
+  'educacion2': 3,
+  'investigacion2': 5,
+  'cs_sociales3': 4,
+  'cfg3': 2,
+  'enfermeria_mq': 6,
+  'reproduccion': 2,
+  'gineco_pat': 5,
+  'gestion2': 5,
+  'investigacion3': 6,
+  'cs_sociales4': 4,
+  'clinica_neonatal2': 5,
+  'clinica_partos2': 4,
+  'clinica_ap2': 5,
+  'alto_riesgo': 4,
+  'clinica_mq': 4,
+  'modulo2': 5,
+  'seminario1': 2,
+  'internado_neonatologia': 10,
+  'internado_obstetricia': 10,
+  'internado_ap': 10,
+  'internado_gineco': 10,
+  'internado_electivo': 15,
+  'seminario2': 3,
+  'ingles4': 3,
+  'internado_electivo1': 15
+};
+
+// Prerrequisitos de cada ramo (ramos que deben estar aprobados para desbloquear este)
+const prerequisitos = {
+  'integracion1': ['fundamentos1'],
+  'bioquimica': ['quimica', 'biologia'],
+  'anatomia': ['biologia'],
+  'fisiologia': ['biologia', 'fisica'],
+  'biodesarrollo': ['biologia'],
+  'histologia': ['biologia'],
+  'investigacion1': ['mate', 'fisica'],
+  'educacion2': ['educacion1'],
+  'inmunologia': ['fisiologia'],
+  'cs_sociales2': ['cs_sociales1'],
+  'ingles2': ['ingles1'],
+  'saludcom1': [],
+  'fundamentos2': ['fisiologia', 'anatomia', 'histologia', 'integracion1'],
+  'obstetricia1': ['fisiologia', 'anatomia', 'histologia', 'biodesarrollo', 'integracion1'],
+  'neonatologia1': ['fisiologia', 'anatomia', 'histologia', 'biodesarrollo', 'integracion1'],
+  'fisiologia_sis': ['fisiologia'],
+  'agentes': ['fisiologia', 'anatomia', 'histologia'],
+  'cs_sociales3': ['cs_sociales2'],
+  'ingles3': ['ingles2'],
+  'neonatologia2': ['neonatologia1', 'fisiologia_sis', 'agentes'],
+  'obstetricia2': ['obstetricia1', 'fisiologia_sis'],
+  'gineco1': ['histologia', 'fisiologia_sis'],
+  'fisiopato': ['fisiologia_sis'],
+  'infectologia': ['agentes'],
+  'farmacologia': ['fisiologia_sis', 'bioquimica'],
+  'integracion2': ['fisiologia_sis','fundamentos2'],
+  'clinica_neonatal1': ['neonatologia2', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
+  'clinica_partos1': ['obstetricia2', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
+  'clinica_ap1': ['obstetricia2', 'gineco1', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
+  'clinica_puerperio': ['obstetricia2', 'fisiopato', 'infectologia', 'farmacologia', 'integracion2'],
+  'clinica_saludcom': ['integracion2'],
+  'modulo1': [],
+  'neonatologia3': ['farmacologia', 'fisiopato', 'obstetricia2'],
+  'saludcom2': ['saludcom1'],
+  'obstetricia_pat': ['obstetricia2', 'farmacologia', 'fisiopato'],
+  'gestion1': ['investigacion1'],
+  'investigacion2': ['investigacion1'],
+  'enfermeria_mq': ['neonatologia3', 'obstetricia_pat'],
+  'reproduccion': ['fisiologia_sis'],
+  'gineco_pat': ['clinica_ap1'],
+  'gestion2': ['gestion1'],
+  'investigacion3': ['investigacion2'],
+  'cs_sociales4': ['cs_sociales3'],
+  'clinica_neonatal2': ['neonatologia3', 'enfermeria_mq'],
+  'clinica_partos2': ['obstetricia_pat', 'enfermeria_mq'],
+  'clinica_ap2': ['obstetricia_pat', 'gineco_pat', 'saludcom2'],
+  'alto_riesgo': ['obstetricia_pat', 'enfermeria_mq'],
+  'clinica_mq': ['gineco_pat', 'enfermeria_mq'],
+  'modulo2': ['modulo1'],
+  'seminario1': ['investigacion3'],
+  'internado_neonatologia': ['clinica_neonatal2'],
+  'internado_obstetricia': ['clinica_partos2', 'alto_riesgo'],
+  'internado_ap': ['clinica_ap2'],
+  'internado_gineco': ['clinica_mq'],
+  'internado_neonatologia1': ['clinica_neonatal2'],
+  'internado_obstetricia1': ['clinica_partos2', 'alto_riesgo'],
+  'internado_ap1': ['clinica_ap2'],
+  'internado_gineco1': ['clinica_mq'],
+  'internado_electivo': [],
+  'internado_electivo1': [],
+  'seminario2': ['seminario1'],
+  'ingles4': ['ingles3']
+};
+
+// Funciones para guardar y cargar progreso en localStorage
+function obtenerAprobados() {
+  const data = localStorage.getItem('mallaAprobados');
+  return data ? JSON.parse(data) : [];
+}
+
+function guardarAprobados(aprobados) {
+  localStorage.setItem('mallaAprobados', JSON.stringify(aprobados));
+}
+
+// Calcula el total de créditos de ramos aprobados
+function calcularCreditosAprobados() {
+  const aprobados = obtenerAprobados();
+  return aprobados.reduce((sum, ramo) => sum + (creditos[ramo] || 0), 0);
+}
+
+// Actualiza qué ramos están desbloqueados o bloqueados según prerrequisitos y créditos especiales
+function actualizarDesbloqueos() {
+  const aprobados = obtenerAprobados();
+  const totalCreditos = calcularCreditosAprobados();
+
+  for (const [destino, reqs] of Object.entries(prerequisitos)) {
+    const elem = document.getElementById(destino);
+    if (!elem) continue;
+
+    // Verificar si se cumplen prerrequisitos normales
+    let puedeDesbloquear = reqs.every(r => aprobados.includes(r));
+
+    // Reglas especiales con créditos para ciertos módulos
+    if (destino === 'modulo1') {
+      puedeDesbloquear = totalCreditos >= 90;
+    }
+    if (destino === 'modulo2') {
+      puedeDesbloquear = aprobados.includes('modulo1') && totalCreditos >= 170;
+    }
+    if (destino === 'internado_electivo' || destino === 'internado_electivo1') {
+      puedeDesbloquear = totalCreditos >= 240;
+    }
+
+    if (!elem.classList.contains('aprobado')) {
+      if (puedeDesbloquear) elem.classList.remove('bloqueado');
+      else elem.classList.add('bloqueado');
+    } else {
+      // Si está aprobado, no debe estar bloqueado
+      elem.classList.remove('bloqueado');
+    }
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.ramo').forEach(ramo => {
-    ramo.addEventListener('click', () => {
-      const id = ramo.id;
-      let aprobados = JSON.parse(localStorage.getItem('aprobados') || '[]');
-      if (!aprobados.includes(id)) aprobados.push(id);
-      else aprobados = aprobados.filter(x => x !== id);
-      localStorage.setItem('aprobados', JSON.stringify(aprobados));
-      location.reload();
-    });
+// Maneja el clic para aprobar o desaprobar un ramo (solo si no está bloqueado)
+function aprobar(e) {
+  const ramo = e.currentTarget;
+  if (ramo.classList.contains('bloqueado')) return;
+
+  ramo.classList.toggle('aprobado');
+
+  const aprobados = obtenerAprobados();
+  if (ramo.classList.contains('aprobado')) {
+    if (!aprobados.includes(ramo.id)) aprobados.push(ramo.id);
+  } else {
+    const idx = aprobados.indexOf(ramo.id);
+    if (idx > -1) aprobados.splice(idx, 1);
+  }
+  guardarAprobados(aprobados);
+
+  actualizarDesbloqueos();
+}
+
+// Al cargar la página, asignar eventos, cargar progreso y actualizar desbloqueos
+window.addEventListener('DOMContentLoaded', () => {
+  const todosRamos = document.querySelectorAll('.ramo');
+
+  const aprobados = obtenerAprobados();
+  todosRamos.forEach(ramo => {
+    if (aprobados.includes(ramo.id)) {
+      ramo.classList.add('aprobado');
+    }
   });
-  desbloquearRamos();
+
+  todosRamos.forEach(ramo => {
+    ramo.addEventListener('click', aprobar);
+  });
+
+  actualizarDesbloqueos();
 });
