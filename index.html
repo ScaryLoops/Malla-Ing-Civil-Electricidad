@@ -1,140 +1,127 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Interactiva Ingeniería Civil en Electricidad UMAG</title>
-  <meta name="description" content="Explora la malla curricular interactiva de Ingeniería Civil en Electricidad en la UMAG. Descubre requisitos por semestre y desbloquea ramos al aprobar.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="estilos.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Malla Interactiva Ingeniería Civil en Electricidad UMAG</title>
+<meta content="Explora la malla curricular interactiva de Ingeniería Civil en Electricidad en la UMAG. Descubre requisitos por semestre y desbloquea ramos al aprobar." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="estilos.css" rel="stylesheet"/>
 </head>
-
 <body>
-  <h1>Ingeniería Civil en Electricidad UMAG</h1>
-  <div class="malla-grid">
-    <!-- Año 1 -->
-    <div class="semestre" id="sem1">
-      <h2>1° Semestre</h2>
-      <div class="ramo" id="computacion" onclick="aprobar('computacion')">Computación (3)</div>
-      <div class="ramo" id="comunicacion" onclick="aprobar('comunicacion')">Comunicación Efectiva (4)</div>
-      <div class="ramo" id="deportes1" onclick="aprobar('deportes1')">Deportes I (2)</div>
-      <div class="ramo" id="introduccion" onclick="aprobar('introduccion')">Introducción a la Ingeniería (4)</div>
-      <div class="ramo" id="matematica1" onclick="aprobar('matematica1')">Matemática I (14)</div>
-    </div>
-
-    <div class="semestre" id="sem2">
-      <h2>2° Semestre</h2>
-      <div class="ramo bloqueado" id="deportes2" onclick="aprobar('deportes2')">Deportes II (2)</div>
-      <div class="ramo bloqueado" id="fisica1" onclick="aprobar('fisica1')">Física I (9) -- Requiere: Matemática I</div>
-      <div class="ramo bloqueado" id="ingenieria_sociedad" onclick="aprobar('ingenieria_sociedad')">Ingeniería y Sociedad (4)</div>
-      <div class="ramo bloqueado" id="matematica2" onclick="aprobar('matematica2')">Matemática II (12) -- Requiere: Matemática I</div>
-      <div class="ramo bloqueado" id="programacion" onclick="aprobar('programacion')">Programación de Computadores (6) -- Requiere: Computación</div>
-    </div>
-
-    <!-- Año 2 -->
-    <div class="semestre" id="sem3">
-      <h2>3° Semestre</h2>
-      <div class="ramo bloqueado" id="fisica2" onclick="aprobar('fisica2')">Física II (9) -- Requiere: Física I, Matemática II</div>
-      <div class="ramo bloqueado" id="matematica3" onclick="aprobar('matematica3')">Matemática III (9) -- Requiere: Matemática II</div>
-      <div class="ramo bloqueado" id="quimica" onclick="aprobar('quimica')">Química General (6)</div>
-      <div class="ramo bloqueado" id="redes1" onclick="aprobar('redes1')">Redes Eléctricas I (4) -- Requiere: Matemática I</div>
-      <div class="ramo bloqueado" id="tecnologia" onclick="aprobar('tecnologia')">Tecnología Eléctrica (3)</div>
-    </div>
-
-    <div class="semestre" id="sem4">
-      <h2>4° Semestre</h2>
-      <div class="ramo bloqueado" id="estadistica" onclick="aprobar('estadistica')">Estadística (6) -- Requiere: Matemática II</div>
-      <div class="ramo bloqueado" id="fisica_electronica" onclick="aprobar('fisica_electronica')">Física Electrónica (3) -- Requiere: Física II</div>
-      <div class="ramo bloqueado" id="fisica3" onclick="aprobar('fisica3')">Física III (6) -- Requiere: Física II, Matemática II</div>
-      <div class="ramo bloqueado" id="matematica4" onclick="aprobar('matematica4')">Matemática IV (6) -- Requiere: Matemática III</div>
-      <div class="ramo bloqueado" id="medidas" onclick="aprobar('medidas')">Medidas Eléctricas (3) -- Requiere: Redes Eléctricas I</div>
-      <div class="ramo bloqueado" id="redes2" onclick="aprobar('redes2')">Redes Eléctricas II (5) -- Requiere: Redes Eléctricas I, Matemática II</div>
-    </div>
-
-    <!-- Año 3 -->
-    <div class="semestre" id="sem5">
-      <h2>5° Semestre</h2>
-      <div class="ramo bloqueado" id="calculo" onclick="aprobar('calculo')">Cálculo Numérico (6) -- Requiere: Matemática IV</div>
-      <div class="ramo bloqueado" id="electromagnetica" onclick="aprobar('electromagnetica')">Ingeniería Electromagnética (6) -- Requiere: Física II, Matemática III</div>
-      <div class="ramo bloqueado" id="ingles1" onclick="aprobar('ingles1')">Inglés I (Técnico) (4)</div>
-      <div class="ramo bloqueado" id="maquinas" onclick="aprobar('maquinas')">Máquinas Eléctricas (6) -- Requiere: Redes Eléctricas II, Física II</div>
-      <div class="ramo bloqueado" id="senales" onclick="aprobar('senales')">Señales y Sistemas (6) -- Requiere: Redes Eléctricas II</div>
-    </div>
-
-    <div class="semestre" id="sem6">
-      <h2>6° Semestre</h2>
-      <div class="ramo bloqueado" id="control" onclick="aprobar('control')">Control Automático (5) -- Requiere: Señales y Sistemas</div>
-      <div class="ramo bloqueado" id="electronica1" onclick="aprobar('electronica1')">Electrónica I (4) -- Requiere: Redes Eléctricas I</div>
-      <div class="ramo bloqueado" id="ingles2" onclick="aprobar('ingles2')">Inglés II (4) -- Requiere: Inglés I</div>
-      <div class="ramo bloqueado" id="lab_maquinas" onclick="aprobar('lab_maquinas')">Lab. Máquinas Eléctricas (4) -- Requiere: Medidas Eléctricas, Máquinas Eléctricas</div>
-      <div class="ramo bloqueado" id="programacion_avanzada" onclick="aprobar('programacion_avanzada')">Programación Avanzada (5) -- Requiere: Programación de Computadores</div>
-      <div class="ramo bloqueado" id="sistemas_potencia1" onclick="aprobar('sistemas_potencia1')">Sistemas de Potencia I (5) -- Requiere: Ingeniería Electromagnética, Máquinas Eléctricas</div>
-      <div class="ramo bloqueado" id="sistemas_digitales" onclick="aprobar('sistemas_digitales')">Sistemas Digitales (6) -- Requiere: Medidas Eléctricas, Matemática I</div>
-    </div>
-
-    <!-- Año 4 -->
-    <div class="semestre" id="sem7">
-      <h2>7° Semestre</h2>
-      <div class="ramo bloqueado" id="economia" onclick="aprobar('economia')">Economía y Administración (4)</div>
-      <div class="ramo bloqueado" id="electronica_potencia1" onclick="aprobar('electronica_potencia1')">Electrónica de Potencia I (6) -- Requiere: Electrónica I</div>
-      <div class="ramo bloqueado" id="electronica2" onclick="aprobar('electronica2')">Electrónica II (4) -- Requiere: Electrónica I</div>
-      <div class="ramo bloqueado" id="emprendedores" onclick="aprobar('emprendedores')">Formación de Emprendedores (2)</div>
-      <div class="ramo bloqueado" id="lab_electronica" onclick="aprobar('lab_electronica')">Laboratorio Electrónica (4) -- Requiere: Electrónica I</div>
-      <div class="ramo bloqueado" id="microprocesadores" onclick="aprobar('microprocesadores')">Microprocesadores (4) -- Requiere: Sistemas Digitales</div>
-      <div class="ramo bloqueado" id="sistemas_potencia2" onclick="aprobar('sistemas_potencia2')">Sistemas de Potencia II (6) -- Requiere: Sistemas de Potencia I</div>
-    </div>
-
-    <div class="semestre" id="sem8">
-      <h2>8° Semestre</h2>
-      <div class="ramo bloqueado" id="comportamiento" onclick="aprobar('comportamiento')">Comportamiento Organizacional (3)</div>
-      <div class="ramo bloqueado" id="comunicaciones" onclick="aprobar('comunicaciones')">Comunicaciones Electrónicas (6) -- Requiere: Electrónica II, Señales y Sistemas, Ingeniería Electromagnética</div>
-      <div class="ramo bloqueado" id="control_digital" onclick="aprobar('control_digital')">Control Digital (6) -- Requiere: Control Automático, Microprocesadores</div>
-      <div class="ramo bloqueado" id="electronica_potencia2" onclick="aprobar('electronica_potencia2')">Electrónica de Potencia II (6) -- Requiere: Máquinas Eléctricas, Electrónica de Potencia I</div>
-      <div class="ramo bloqueado" id="investigacion" onclick="aprobar('investigacion')">Investigación Operativa (4) -- Requiere: Cálculo Numérico</div>
-      <div class="ramo bloqueado" id="lab_micro" onclick="aprobar('lab_micro')">Lab. de Microcomputadores (5) -- Requiere: Microprocesadores, Lab. Electrónica</div>
-    </div>
-
-    <!-- Año 5 -->
-    <div class="semestre" id="sem9">
-      <h2>9° Semestre</h2>
-      <div class="ramo bloqueado" id="accionamientos" onclick="aprobar('accionamientos')">Accionamientos Eléctricos (7) -- Requiere: Electrónica de Potencia I, Lab. Máquinas Eléctricas, Control Automático</div>
-      <div class="ramo bloqueado" id="control_moderno" onclick="aprobar('control_moderno')">Control Moderno (6)</div>
-      <div class="ramo bloqueado" id="electivo1" onclick="aprobar('electivo1')">Electivo I (5)</div>
-      <div class="ramo bloqueado" id="ingenieria_economica" onclick="aprobar('ingenieria_economica')">Ingeniería Económica (4) -- Requiere: Economía y Administración</div>
-      <div class="ramo bloqueado" id="ingles3" onclick="aprobar('ingles3')">Inglés III (4)</div>
-    </div>
-
-    <div class="semestre" id="sem10">
-      <h2>10° Semestre</h2>
-      <div class="ramo bloqueado" id="control_riesgo" onclick="aprobar('control_riesgo')">Control de Riesgo Operacional (2)</div>
-      <div class="ramo bloqueado" id="distribucion" onclick="aprobar('distribucion')">Distribución y Protecciones (6) -- Requiere: Sistemas de Potencia II</div>
-      <div class="ramo bloqueado" id="electivo2" onclick="aprobar('electivo2')">Electivo II (5)</div>
-      <div class="ramo bloqueado" id="electivo3" onclick="aprobar('electivo3')">Electivo III (5)</div>
-      <div class="ramo bloqueado" id="ingles4" onclick="aprobar('ingles4')">Inglés IV (4) -- Requiere: Inglés III</div>
-      <div class="ramo bloqueado" id="instrumentacion" onclick="aprobar('instrumentacion')">Instrumentación Industrial (6) -- Requiere: Microprocesadores, Electrónica II</div>
-      <div class="ramo bloqueado" id="proyectos" onclick="aprobar('proyectos')">Preparación de Proyectos (4) -- Requiere: Ingeniería Económica</div>
-    </div>
-
-    <!-- Año 6 -->
-    <div class="semestre" id="sem11">
-      <h2>11° Semestre</h2>
-      <div class="ramo bloqueado" id="automatas" onclick="aprobar('automatas')">Autómatas Programables (6) -- Requiere: Lab. de Microcomputadores, Accionamientos Eléctricos</div>
-      <div class="ramo bloqueado" id="direccion" onclick="aprobar('direccion')">Dirección de Empresas (4) -- Requiere: Preparación de Proyectos</div>
-      <div class="ramo bloqueado" id="electivo_titulacion" onclick="aprobar('electivo_titulacion')">Electivo de Titulación (5)</div>
-      <div class="ramo bloqueado" id="electivo4" onclick="aprobar('electivo4')">Electivo IV (3) -- Requiere: Electivo III</div>
-      <div class="ramo bloqueado" id="gestion" onclick="aprobar('gestion')">Gestión Ambiental (4)</div>
-      <div class="ramo bloqueado" id="plantas" onclick="aprobar('plantas')">Plantas de Energía (6) -- Requiere: Electrónica de Potencia I</div>
-    </div>
-
-    <div class="semestre" id="sem12">
-      <h2>12° Semestre</h2>
-      <div class="ramo bloqueado" id="trabajo_titulo" onclick="aprobar('trabajo_titulo')">Trabajo de Título (30) -- Requiere: Electivo I, Control Moderno, Inglés III</div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-
-  <style>
+<h1>Ingeniería Civil en Electricidad UMAG</h1>
+<div class="malla-grid">
+<!-- Año 1 -->
+<div class="semestre" id="sem1">
+<h2>1° Semestre</h2>
+<div class="ramo" id="computacion" onclick="aprobar('computacion')">Computación (3)</div>
+<div class="ramo" id="comunicacion" onclick="aprobar('comunicacion')">Comunicación Efectiva (4)</div>
+<div class="ramo" id="deportes1" onclick="aprobar('deportes1')">Deportes I (2)</div>
+<div class="ramo" id="introduccion" onclick="aprobar('introduccion')">Introducción a la Ingeniería (4)</div>
+<div class="ramo" id="matematica1" onclick="aprobar('matematica1')">Matemática I (14)</div>
+</div>
+<div class="semestre" id="sem2">
+<h2>2° Semestre</h2>
+<div class="ramo bloqueado" id="deportes2" onclick="aprobar('deportes2')">Deportes II (2)</div>
+<div class="ramo bloqueado" id="fisica1" onclick="aprobar('fisica1')">Física I (9)</div>
+<div class="ramo bloqueado" id="ingenieria_sociedad" onclick="aprobar('ingenieria_sociedad')">Ingeniería y Sociedad (4)</div>
+<div class="ramo bloqueado" id="matematica2" onclick="aprobar('matematica2')">Matemática II (12)</div>
+<div class="ramo bloqueado" id="programacion" onclick="aprobar('programacion')">Programación de Computadores (6)</div>
+</div>
+<!-- Año 2 -->
+<div class="semestre" id="sem3">
+<h2>3° Semestre</h2>
+<div class="ramo bloqueado" id="fisica2" onclick="aprobar('fisica2')">Física II (9)</div>
+<div class="ramo bloqueado" id="matematica3" onclick="aprobar('matematica3')">Matemática III (9)</div>
+<div class="ramo bloqueado" id="quimica" onclick="aprobar('quimica')">Química General (6)</div>
+<div class="ramo bloqueado" id="redes1" onclick="aprobar('redes1')">Redes Eléctricas I (4)</div>
+<div class="ramo bloqueado" id="tecnologia" onclick="aprobar('tecnologia')">Tecnología Eléctrica (3)</div>
+</div>
+<div class="semestre" id="sem4">
+<h2>4° Semestre</h2>
+<div class="ramo bloqueado" id="estadistica" onclick="aprobar('estadistica')">Estadística (6)</div>
+<div class="ramo bloqueado" id="fisica_electronica" onclick="aprobar('fisica_electronica')">Física Electrónica (3)</div>
+<div class="ramo bloqueado" id="fisica3" onclick="aprobar('fisica3')">Física III (6)</div>
+<div class="ramo bloqueado" id="matematica4" onclick="aprobar('matematica4')">Matemática IV (6)</div>
+<div class="ramo bloqueado" id="medidas" onclick="aprobar('medidas')">Medidas Eléctricas (3)</div>
+<div class="ramo bloqueado" id="redes2" onclick="aprobar('redes2')">Redes Eléctricas II (5)</div>
+</div>
+<!-- Año 3 -->
+<div class="semestre" id="sem5">
+<h2>5° Semestre</h2>
+<div class="ramo bloqueado" id="calculo" onclick="aprobar('calculo')">Cálculo Numérico (6)</div>
+<div class="ramo bloqueado" id="electromagnetica" onclick="aprobar('electromagnetica')">Ingeniería Electromagnética (6)</div>
+<div class="ramo bloqueado" id="ingles1" onclick="aprobar('ingles1')">Inglés I (Técnico) (4)</div>
+<div class="ramo bloqueado" id="maquinas" onclick="aprobar('maquinas')">Máquinas Eléctricas (6)</div>
+<div class="ramo bloqueado" id="senales" onclick="aprobar('senales')">Señales y Sistemas (6)</div>
+</div>
+<div class="semestre" id="sem6">
+<h2>6° Semestre</h2>
+<div class="ramo bloqueado" id="control" onclick="aprobar('control')">Control Automático (5)</div>
+<div class="ramo bloqueado" id="electronica1" onclick="aprobar('electronica1')">Electrónica I (4)</div>
+<div class="ramo bloqueado" id="ingles2" onclick="aprobar('ingles2')">Inglés II (4)</div>
+<div class="ramo bloqueado" id="lab_maquinas" onclick="aprobar('lab_maquinas')">Lab. Máquinas Eléctricas (4)</div>
+<div class="ramo bloqueado" id="programacion_avanzada" onclick="aprobar('programacion_avanzada')">Programación Avanzada (5)</div>
+<div class="ramo bloqueado" id="sistemas_potencia1" onclick="aprobar('sistemas_potencia1')">Sistemas de Potencia I (5)</div>
+<div class="ramo bloqueado" id="sistemas_digitales" onclick="aprobar('sistemas_digitales')">Sistemas Digitales (6)</div>
+</div>
+<!-- Año 4 -->
+<div class="semestre" id="sem7">
+<h2>7° Semestre</h2>
+<div class="ramo bloqueado" id="economia" onclick="aprobar('economia')">Economía y Administración (4)</div>
+<div class="ramo bloqueado" id="electronica_potencia1" onclick="aprobar('electronica_potencia1')">Electrónica de Potencia I (6)</div>
+<div class="ramo bloqueado" id="electronica2" onclick="aprobar('electronica2')">Electrónica II (4)</div>
+<div class="ramo bloqueado" id="emprendedores" onclick="aprobar('emprendedores')">Formación de Emprendedores (2)</div>
+<div class="ramo bloqueado" id="lab_electronica" onclick="aprobar('lab_electronica')">Laboratorio Electrónica (4)</div>
+<div class="ramo bloqueado" id="microprocesadores" onclick="aprobar('microprocesadores')">Microprocesadores (4)</div>
+<div class="ramo bloqueado" id="sistemas_potencia2" onclick="aprobar('sistemas_potencia2')">Sistemas de Potencia II (6)</div>
+</div>
+<div class="semestre" id="sem8">
+<h2>8° Semestre</h2>
+<div class="ramo bloqueado" id="comportamiento" onclick="aprobar('comportamiento')">Comportamiento Organizacional (3)</div>
+<div class="ramo bloqueado" id="comunicaciones" onclick="aprobar('comunicaciones')">Comunicaciones Electrónicas (6)</div>
+<div class="ramo bloqueado" id="control_digital" onclick="aprobar('control_digital')">Control Digital (6)</div>
+<div class="ramo bloqueado" id="electronica_potencia2" onclick="aprobar('electronica_potencia2')">Electrónica de Potencia II (6)</div>
+<div class="ramo bloqueado" id="investigacion" onclick="aprobar('investigacion')">Investigación Operativa (4)</div>
+<div class="ramo bloqueado" id="lab_micro" onclick="aprobar('lab_micro')">Lab. de Microcomputadores (5)</div>
+</div>
+<!-- Año 5 -->
+<div class="semestre" id="sem9">
+<h2>9° Semestre</h2>
+<div class="ramo bloqueado" id="accionamientos" onclick="aprobar('accionamientos')">Accionamientos Eléctricos (7)</div>
+<div class="ramo bloqueado" id="control_moderno" onclick="aprobar('control_moderno')">Control Moderno (6)</div>
+<div class="ramo bloqueado" id="electivo1" onclick="aprobar('electivo1')">Electivo I (5)</div>
+<div class="ramo bloqueado" id="ingenieria_economica" onclick="aprobar('ingenieria_economica')">Ingeniería Económica (4)</div>
+<div class="ramo bloqueado" id="ingles3" onclick="aprobar('ingles3')">Inglés III (4)</div>
+</div>
+<div class="semestre" id="sem10">
+<h2>10° Semestre</h2>
+<div class="ramo bloqueado" id="control_riesgo" onclick="aprobar('control_riesgo')">Control de Riesgo Operacional (2)</div>
+<div class="ramo bloqueado" id="distribucion" onclick="aprobar('distribucion')">Distribución y Protecciones (6)</div>
+<div class="ramo bloqueado" id="electivo2" onclick="aprobar('electivo2')">Electivo II (5)</div>
+<div class="ramo bloqueado" id="electivo3" onclick="aprobar('electivo3')">Electivo III (5)</div>
+<div class="ramo bloqueado" id="ingles4" onclick="aprobar('ingles4')">Inglés IV (4)</div>
+<div class="ramo bloqueado" id="instrumentacion" onclick="aprobar('instrumentacion')">Instrumentación Industrial (6)</div>
+<div class="ramo bloqueado" id="proyectos" onclick="aprobar('proyectos')">Preparación de Proyectos (4)</div>
+</div>
+<!-- Año 6 -->
+<div class="semestre" id="sem11">
+<h2>11° Semestre</h2>
+<div class="ramo bloqueado" id="automatas" onclick="aprobar('automatas')">Autómatas Programables (6)</div>
+<div class="ramo bloqueado" id="direccion" onclick="aprobar('direccion')">Dirección de Empresas (4)</div>
+<div class="ramo bloqueado" id="electivo_titulacion" onclick="aprobar('electivo_titulacion')">Electivo de Titulación (5)</div>
+<div class="ramo bloqueado" id="electivo4" onclick="aprobar('electivo4')">Electivo IV (3)</div>
+<div class="ramo bloqueado" id="gestion" onclick="aprobar('gestion')">Gestión Ambiental (4)</div>
+<div class="ramo bloqueado" id="plantas" onclick="aprobar('plantas')">Plantas de Energía (6)</div>
+</div>
+<div class="semestre" id="sem12">
+<h2>12° Semestre</h2>
+<div class="ramo bloqueado" id="trabajo_titulo" onclick="aprobar('trabajo_titulo')">Trabajo de Título (30)</div>
+</div>
+</div>
+<script src="script.js"></script>
+<style>
     h1 {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
