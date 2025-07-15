@@ -1,15 +1,8 @@
 function desbloquearRamos() {
   const aprobados = JSON.parse(localStorage.getItem('aprobados') || '[]');
-  document.getElementById('computacion').classList.remove('bloqueado');
-  document.getElementById('comunicacion_efectiva').classList.remove('bloqueado');
-  document.getElementById('deportes_i').classList.remove('bloqueado');
-  document.getElementById('introduccion_a_la_ingenieria').classList.remove('bloqueado');
-  document.getElementById('matematica_i').classList.remove('bloqueado');
-  document.getElementById('deportes_ii').classList.remove('bloqueado');
   if (aprobados.includes('matematica_i')) {
     document.getElementById('fisica_i').classList.remove('bloqueado');
   }
-  document.getElementById('ingenieria_y_sociedad').classList.remove('bloqueado');
   if (aprobados.includes('matematica_i')) {
     document.getElementById('matematica_ii').classList.remove('bloqueado');
   }
@@ -22,11 +15,9 @@ function desbloquearRamos() {
   if (aprobados.includes('matematica_ii')) {
     document.getElementById('matematica_iii').classList.remove('bloqueado');
   }
-  document.getElementById('quimica_general').classList.remove('bloqueado');
   if (aprobados.includes('matematica_i')) {
     document.getElementById('redes_electricas_i').classList.remove('bloqueado');
   }
-  document.getElementById('tecnologia_electrica').classList.remove('bloqueado');
   if (aprobados.includes('matematica_ii')) {
     document.getElementById('estadistica').classList.remove('bloqueado');
   }
@@ -51,7 +42,6 @@ function desbloquearRamos() {
   if (aprobados.includes('fisica_ii') && aprobados.includes('matematica_iii')) {
     document.getElementById('ingenieria_electromagnetica').classList.remove('bloqueado');
   }
-  document.getElementById('ingles_i_tecnico').classList.remove('bloqueado');
   if (aprobados.includes('redes_electricas_ii') && aprobados.includes('fisica_ii')) {
     document.getElementById('maquinas_electricas').classList.remove('bloqueado');
   }
@@ -79,14 +69,12 @@ function desbloquearRamos() {
   if (aprobados.includes('medidas_electricas') && aprobados.includes('matematica_i')) {
     document.getElementById('sistemas_digitales').classList.remove('bloqueado');
   }
-  document.getElementById('economia_y_administracion_de_empresas').classList.remove('bloqueado');
   if (aprobados.includes('electronica_i')) {
     document.getElementById('electronica_de_potencia_i').classList.remove('bloqueado');
   }
   if (aprobados.includes('electronica_i')) {
     document.getElementById('electronica_ii').classList.remove('bloqueado');
   }
-  document.getElementById('formacion_de_emprendedores').classList.remove('bloqueado');
   if (aprobados.includes('electronica_i')) {
     document.getElementById('laboratorio_electronica').classList.remove('bloqueado');
   }
@@ -96,7 +84,6 @@ function desbloquearRamos() {
   if (aprobados.includes('sistemas_de_potencia_i')) {
     document.getElementById('sistemas_de_potencia_ii').classList.remove('bloqueado');
   }
-  document.getElementById('comportamiento_organizacional').classList.remove('bloqueado');
   if (aprobados.includes('electronica_ii') && aprobados.includes('senales_y_sistemas') && aprobados.includes('ingenieria_electromagnetica')) {
     document.getElementById('comunicaciones_electronicas').classList.remove('bloqueado');
   }
@@ -115,22 +102,18 @@ function desbloquearRamos() {
   if (aprobados.includes('electronica_de_potencia_i') && aprobados.includes('laboratorio_de_maquinas_electricas') && aprobados.includes('control_automatico')) {
     document.getElementById('accionamientos_electricos').classList.remove('bloqueado');
   }
-  document.getElementById('control_moderno').classList.remove('bloqueado');
   if (aprobados.includes('economia_y_administracion_de_empresas') && aprobados.includes('formacion_de_emprendedores') && aprobados.includes('microprocesadores') && aprobados.includes('electronica_ii') && aprobados.includes('electronica_de_potencia_i') && aprobados.includes('sistemas_de_potencia_ii') && aprobados.includes('laboratorio_electronica')) {
     document.getElementById('electivo_i').classList.remove('bloqueado');
   }
   if (aprobados.includes('economia_y_administracion_de_empresas')) {
     document.getElementById('ingenieria_economica').classList.remove('bloqueado');
   }
-  document.getElementById('ingles_iii').classList.remove('bloqueado');
-  document.getElementById('control_de_riesgo_operacional').classList.remove('bloqueado');
   if (aprobados.includes('sistemas_de_potencia_ii')) {
     document.getElementById('distribucion_y_protecciones').classList.remove('bloqueado');
   }
   if (aprobados.includes('electivo_i')) {
     document.getElementById('electivo_ii').classList.remove('bloqueado');
   }
-  document.getElementById('electivo_iii').classList.remove('bloqueado');
   if (aprobados.includes('ingles_iii')) {
     document.getElementById('ingles_iv').classList.remove('bloqueado');
   }
@@ -146,11 +129,9 @@ function desbloquearRamos() {
   if (aprobados.includes('preparacion_de_proyectos')) {
     document.getElementById('direccion_de_empresas').classList.remove('bloqueado');
   }
-  document.getElementById('electivo_de_titulacion').classList.remove('bloqueado');
   if (aprobados.includes('electivo_iii')) {
     document.getElementById('electivo_iv').classList.remove('bloqueado');
   }
-  document.getElementById('gestion_ambiental').classList.remove('bloqueado');
   if (aprobados.includes('electronica_de_potencia_i')) {
     document.getElementById('plantas_de_energia').classList.remove('bloqueado');
   }
