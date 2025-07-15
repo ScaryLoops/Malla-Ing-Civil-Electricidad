@@ -1,0 +1,509 @@
+[
+  {
+    "nombre": "Computación",
+    "codigo": "RAM001",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Comunicación Efectiva",
+    "codigo": "RAM002",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Deportes I",
+    "codigo": "RAM003",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Introducción a la Ingeniería",
+    "codigo": "RAM004",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Matemática I",
+    "codigo": "RAM005",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Deportes II",
+    "codigo": "RAM006",
+    "semestre": 2,
+    "requisitos": []
+  },
+  {
+    "nombre": "Física I",
+    "codigo": "RAM007",
+    "semestre": 2,
+    "requisitos": [
+      "RAM005"
+    ]
+  },
+  {
+    "nombre": "Ingeniería y Sociedad",
+    "codigo": "RAM008",
+    "semestre": 2,
+    "requisitos": []
+  },
+  {
+    "nombre": "Matemática II",
+    "codigo": "RAM009",
+    "semestre": 2,
+    "requisitos": [
+      "RAM005"
+    ]
+  },
+  {
+    "nombre": "Programación de Computadores",
+    "codigo": "RAM010",
+    "semestre": 2,
+    "requisitos": [
+      "RAM001"
+    ]
+  },
+  {
+    "nombre": "Física II",
+    "codigo": "RAM011",
+    "semestre": 3,
+    "requisitos": [
+      "RAM007",
+      "RAM009"
+    ]
+  },
+  {
+    "nombre": "Matemática III",
+    "codigo": "RAM012",
+    "semestre": 3,
+    "requisitos": [
+      "RAM009"
+    ]
+  },
+  {
+    "nombre": "Química General",
+    "codigo": "RAM013",
+    "semestre": 3,
+    "requisitos": []
+  },
+  {
+    "nombre": "Redes Eléctricas I",
+    "codigo": "RAM014",
+    "semestre": 3,
+    "requisitos": [
+      "RAM005"
+    ]
+  },
+  {
+    "nombre": "Tecnología Eléctrica",
+    "codigo": "RAM015",
+    "semestre": 3,
+    "requisitos": []
+  },
+  {
+    "nombre": "Estadística",
+    "codigo": "RAM016",
+    "semestre": 4,
+    "requisitos": [
+      "RAM009"
+    ]
+  },
+  {
+    "nombre": "Física Electrónica",
+    "codigo": "RAM017",
+    "semestre": 4,
+    "requisitos": [
+      "RAM011"
+    ]
+  },
+  {
+    "nombre": "Física III",
+    "codigo": "RAM018",
+    "semestre": 4,
+    "requisitos": [
+      "RAM011",
+      "RAM009"
+    ]
+  },
+  {
+    "nombre": "Matemática IV",
+    "codigo": "RAM019",
+    "semestre": 4,
+    "requisitos": [
+      "RAM012"
+    ]
+  },
+  {
+    "nombre": "Medidas Eléctricas",
+    "codigo": "RAM020",
+    "semestre": 4,
+    "requisitos": [
+      "RAM014"
+    ]
+  },
+  {
+    "nombre": "Redes Eléctricas II",
+    "codigo": "RAM021",
+    "semestre": 4,
+    "requisitos": [
+      "RAM014",
+      "RAM009"
+    ]
+  },
+  {
+    "nombre": "Cálculo Numérico",
+    "codigo": "RAM022",
+    "semestre": 5,
+    "requisitos": [
+      "RAM019"
+    ]
+  },
+  {
+    "nombre": "Ingeniería Electromagnética",
+    "codigo": "RAM023",
+    "semestre": 5,
+    "requisitos": [
+      "RAM011",
+      "RAM012"
+    ]
+  },
+  {
+    "nombre": "Inglés I (Técnico)",
+    "codigo": "RAM024",
+    "semestre": 5,
+    "requisitos": []
+  },
+  {
+    "nombre": "Máquinas Eléctricas",
+    "codigo": "RAM025",
+    "semestre": 5,
+    "requisitos": [
+      "RAM021",
+      "RAM011"
+    ]
+  },
+  {
+    "nombre": "Señales y Sistemas",
+    "codigo": "RAM026",
+    "semestre": 5,
+    "requisitos": [
+      "RAM021"
+    ]
+  },
+  {
+    "nombre": "Control Automático",
+    "codigo": "RAM027",
+    "semestre": 6,
+    "requisitos": [
+      "RAM026"
+    ]
+  },
+  {
+    "nombre": "Electrónica I",
+    "codigo": "RAM028",
+    "semestre": 6,
+    "requisitos": [
+      "RAM014"
+    ]
+  },
+  {
+    "nombre": "Inglés II",
+    "codigo": "RAM029",
+    "semestre": 6,
+    "requisitos": [
+      "RAM024"
+    ]
+  },
+  {
+    "nombre": "Laboratorio de Máquinas Eléctricas",
+    "codigo": "RAM030",
+    "semestre": 6,
+    "requisitos": [
+      "RAM020",
+      "RAM025"
+    ]
+  },
+  {
+    "nombre": "Programación Avanzada",
+    "codigo": "RAM031",
+    "semestre": 6,
+    "requisitos": [
+      "RAM010"
+    ]
+  },
+  {
+    "nombre": "Sistemas de Potencia I",
+    "codigo": "RAM032",
+    "semestre": 6,
+    "requisitos": [
+      "RAM023",
+      "RAM025"
+    ]
+  },
+  {
+    "nombre": "Sistemas Digitales",
+    "codigo": "RAM033",
+    "semestre": 6,
+    "requisitos": [
+      "RAM020",
+      "RAM005"
+    ]
+  },
+  {
+    "nombre": "Economía y Administración de Empresas",
+    "codigo": "RAM034",
+    "semestre": 7,
+    "requisitos": []
+  },
+  {
+    "nombre": "Electrónica de Potencia I",
+    "codigo": "RAM035",
+    "semestre": 7,
+    "requisitos": [
+      "RAM028"
+    ]
+  },
+  {
+    "nombre": "Electrónica II",
+    "codigo": "RAM036",
+    "semestre": 7,
+    "requisitos": [
+      "RAM028"
+    ]
+  },
+  {
+    "nombre": "Formación de Emprendedores",
+    "codigo": "RAM037",
+    "semestre": 7,
+    "requisitos": []
+  },
+  {
+    "nombre": "Laboratorio Electrónica",
+    "codigo": "RAM038",
+    "semestre": 7,
+    "requisitos": [
+      "RAM028"
+    ]
+  },
+  {
+    "nombre": "Microprocesadores",
+    "codigo": "RAM039",
+    "semestre": 7,
+    "requisitos": [
+      "RAM033"
+    ]
+  },
+  {
+    "nombre": "Sistemas de Potencia II",
+    "codigo": "RAM040",
+    "semestre": 7,
+    "requisitos": [
+      "RAM032"
+    ]
+  },
+  {
+    "nombre": "Comportamiento Organizacional",
+    "codigo": "RAM041",
+    "semestre": 8,
+    "requisitos": []
+  },
+  {
+    "nombre": "Comunicaciones Electrónicas",
+    "codigo": "RAM042",
+    "semestre": 8,
+    "requisitos": [
+      "RAM036",
+      "RAM026",
+      "RAM023"
+    ]
+  },
+  {
+    "nombre": "Control Digital",
+    "codigo": "RAM043",
+    "semestre": 8,
+    "requisitos": [
+      "RAM027",
+      "RAM039"
+    ]
+  },
+  {
+    "nombre": "Electrónica de Potencia II",
+    "codigo": "RAM044",
+    "semestre": 8,
+    "requisitos": [
+      "RAM025",
+      "RAM035"
+    ]
+  },
+  {
+    "nombre": "Investigación Operativa",
+    "codigo": "RAM045",
+    "semestre": 8,
+    "requisitos": [
+      "RAM022"
+    ]
+  },
+  {
+    "nombre": "Laboratorio de Microcomputadores",
+    "codigo": "RAM046",
+    "semestre": 8,
+    "requisitos": [
+      "RAM039",
+      "RAM038"
+    ]
+  },
+  {
+    "nombre": "Accionamientos Eléctricos",
+    "codigo": "RAM047",
+    "semestre": 9,
+    "requisitos": [
+      "RAM035",
+      "RAM030",
+      "RAM027"
+    ]
+  },
+  {
+    "nombre": "Control Moderno",
+    "codigo": "RAM048",
+    "semestre": 9,
+    "requisitos": []
+  },
+  {
+    "nombre": "Electivo I",
+    "codigo": "RAM049",
+    "semestre": 9,
+    "requisitos": [
+      "RAM034",
+      "RAM037",
+      "RAM039",
+      "RAM036",
+      "RAM035",
+      "RAM040",
+      "RAM038"
+    ]
+  },
+  {
+    "nombre": "Ingeniería Económica",
+    "codigo": "RAM050",
+    "semestre": 9,
+    "requisitos": [
+      "RAM034"
+    ]
+  },
+  {
+    "nombre": "Inglés III",
+    "codigo": "RAM051",
+    "semestre": 9,
+    "requisitos": []
+  },
+  {
+    "nombre": "Control de Riesgo Operacional",
+    "codigo": "RAM052",
+    "semestre": 10,
+    "requisitos": []
+  },
+  {
+    "nombre": "Distribución y Protecciones",
+    "codigo": "RAM053",
+    "semestre": 10,
+    "requisitos": [
+      "RAM040"
+    ]
+  },
+  {
+    "nombre": "Electivo II",
+    "codigo": "RAM054",
+    "semestre": 10,
+    "requisitos": [
+      "RAM049"
+    ]
+  },
+  {
+    "nombre": "Electivo III",
+    "codigo": "RAM055",
+    "semestre": 10,
+    "requisitos": []
+  },
+  {
+    "nombre": "Inglés IV",
+    "codigo": "RAM056",
+    "semestre": 10,
+    "requisitos": [
+      "RAM051"
+    ]
+  },
+  {
+    "nombre": "Instrumentación Industrial",
+    "codigo": "RAM057",
+    "semestre": 10,
+    "requisitos": [
+      "RAM039",
+      "RAM036"
+    ]
+  },
+  {
+    "nombre": "Preparación de Proyectos",
+    "codigo": "RAM058",
+    "semestre": 10,
+    "requisitos": [
+      "RAM050"
+    ]
+  },
+  {
+    "nombre": "Autómatas Programables",
+    "codigo": "RAM059",
+    "semestre": 11,
+    "requisitos": [
+      "RAM046",
+      "RAM047"
+    ]
+  },
+  {
+    "nombre": "Dirección de Empresas",
+    "codigo": "RAM060",
+    "semestre": 11,
+    "requisitos": [
+      "RAM058"
+    ]
+  },
+  {
+    "nombre": "Electivo de Titulación",
+    "codigo": "RAM061",
+    "semestre": 11,
+    "requisitos": []
+  },
+  {
+    "nombre": "Electivo IV",
+    "codigo": "RAM062",
+    "semestre": 11,
+    "requisitos": [
+      "RAM055"
+    ]
+  },
+  {
+    "nombre": "Gestión Ambiental",
+    "codigo": "RAM063",
+    "semestre": 11,
+    "requisitos": []
+  },
+  {
+    "nombre": "Plantas de Energía",
+    "codigo": "RAM064",
+    "semestre": 11,
+    "requisitos": [
+      "RAM035"
+    ]
+  },
+  {
+    "nombre": "Trabajo de Título",
+    "codigo": "RAM065",
+    "semestre": 12,
+    "requisitos": [
+      "RAM049",
+      "RAM048",
+      "RAM051"
+    ]
+  }
+]
