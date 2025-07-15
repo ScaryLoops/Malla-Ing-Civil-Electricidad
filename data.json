@@ -1,0 +1,68 @@
+[
+  {
+    "nombre": "Computación",
+    "codigo": "COM1",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Comunicación Efectiva",
+    "codigo": "COMEF",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Deportes I",
+    "codigo": "DEP1",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Introducción a la Ingeniería",
+    "codigo": "ING1",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Matemática I",
+    "codigo": "MAT1",
+    "semestre": 1,
+    "requisitos": []
+  },
+  {
+    "nombre": "Deportes II",
+    "codigo": "DEP2",
+    "semestre": 2,
+    "requisitos": []
+  },
+  {
+    "nombre": "Física I",
+    "codigo": "FIS1",
+    "semestre": 2,
+    "requisitos": [
+      "MAT1"
+    ]
+  },
+  {
+    "nombre": "Ingeniería y Sociedad",
+    "codigo": "INGSOC",
+    "semestre": 2,
+    "requisitos": []
+  },
+  {
+    "nombre": "Matemática II",
+    "codigo": "MAT2",
+    "semestre": 2,
+    "requisitos": [
+      "MAT1"
+    ]
+  },
+  {
+    "nombre": "Programación de Computadores",
+    "codigo": "PROG1",
+    "semestre": 2,
+    "requisitos": [
+      "COM1"
+    ]
+  }
+]

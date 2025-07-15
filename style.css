@@ -1,0 +1,28 @@
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+h1 {
+    text-align: center;
+}
+.materia {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+}
+.habilitada {
+    background-color: #c8e6c9;
+}
+.bloqueada {
+    background-color: #ffcdd2;
+    cursor: not-allowed;
+}
+.aprobada {
+    background-color: #90caf9;
+    text-decoration: line-through;
+}
